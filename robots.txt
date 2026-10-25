@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /config.php
+Disallow: /ariza.php
+Sitemap: https://yuristkadr.uz/sitemap.xml

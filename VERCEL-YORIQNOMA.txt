@@ -1,0 +1,74 @@
+«YURIST VA KADR» SAYTINI VERCEL'GA CHIQARISH (bepul, ~15 daqiqa)
+===============================================================
+
+Natijada sayt shunday manzilda ochiladi:  https://yuristkadr.vercel.app
+(nomi bo‘sh bo‘lsa; band bo‘lsa, Vercel boshqa variant beradi)
+
+Bu papkada hammasi tayyor:
+  index.html va boshqa fayllar — sayt
+  api/feed.js   — kanallardan yangiliklarni olib beradi (token kerak emas)
+  api/ariza.js  — ariza va savollarni botga yuboradi
+  vercel.json   — Vercel sozlamasi (tegmang)
+
+
+1-QADAM. GITHUB'GA YUKLASH
+--------------------------
+1. github.com da ro‘yxatdan o‘ting (bepul).
+2. Yuqori o‘ngdagi "+" → "New repository".
+   Nomi: yuristkadr-sayt   ·   "Private" ni tanlang   ·   "Create repository".
+3. Ochilgan sahifada "uploading an existing file" havolasini bosing.
+4. ZIP'ni kompyuterda oching va ICHIDAGI BARCHA fayl va papkalarni
+   (api, img, namuna papkalari bilan birga) brauzer oynasiga sudrab tashlang.
+   Diqqat: papkaning o‘zini emas, ichidagilarni tashlang — index.html eng
+   yuqori darajada turishi kerak.
+5. Pastdagi "Commit changes" tugmasini bosing.
+
+
+2-QADAM. VERCEL'GA ULASH
+------------------------
+1. vercel.com → "Sign Up" → "Continue with GitHub".
+2. "Add New…" → "Project" → ro‘yxatdan yuristkadr-sayt ni tanlab "Import".
+3. "Project Name" ga yuristkadr yozing (manzil shu nomdan bo‘ladi).
+   Framework Preset: "Other". Boshqa hech narsani o‘zgartirmang.
+4. "Environment Variables" bo‘limini oching va ikkita qator qo‘shing:
+     BOT_TOKEN  =  @BotFather bergan token (@yuristkadrbot uchun)
+     CHAT_IDS   =  xabar boradigan chat ID (masalan 123456789)
+5. "Deploy" ni bosing. 1 daqiqadan so‘ng sayt tayyor.
+
+Token va chat ID'ni keyin qo‘shsangiz ham bo‘ladi:
+Project → Settings → Environment Variables → saqlang →
+Deployments → oxirgisi → "…" → "Redeploy".
+
+
+BOT TOKENI VA CHAT ID
+---------------------
+• Token: bot egasi akkauntidan @BotFather → /mybots → @yuristkadrbot →
+  "API Token". Uni hech kimga bermang va saytga yozmang — faqat Vercel'ga.
+• Chat ID: savollar keladigan akkauntdan @userinfobot ga /start yozing,
+  u ID raqamni ko‘rsatadi. Shu akkaunt @yuristkadrbot ga ham /start bosgan
+  bo‘lishi shart (aks holda bot unga yoza olmaydi).
+• Bir nechta xodimga kelsin desangiz: yopiq guruh oching, botni qo‘shing,
+  guruh ID'sini CHAT_IDS ga yozing (minus bilan boshlanadi: -100...).
+  Bir nechta ID'ni vergul bilan yozish mumkin.
+
+
+TEKSHIRISH
+----------
+1. Saytni oching → "Savolingiz qoldimi?" shaklidan sinov savoli yuboring →
+   Telegram'ga xabar kelishi kerak.
+2. "Yangiliklar va maqolalar" bo‘limida kanallardagi oxirgi postlar chiqadi.
+   Yangi post ko‘pi bilan 15 daqiqada saytga tushadi.
+
+
+KEYINCHALIK O‘ZGARTIRISH KIRITISH
+---------------------------------
+GitHub'dagi faylni almashtirsangiz (Add file → Upload files), Vercel
+saytni 1 daqiqada o‘zi yangilaydi. Men bergan yangi fayllarni shu yo‘l
+bilan yuklaysiz.
+
+
+O‘Z DOMENINGIZNI ULASH (ixtiyoriy, keyinroq)
+-------------------------------------------
+yuristkadr.uz kabi domen olsangiz: Vercel → Project → Settings → Domains →
+domenni yozing → Vercel ko‘rsatgan DNS yozuvlarini domen paneliga kiriting.
+SSL (https) avtomatik yoqiladi.
