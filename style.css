@@ -901,3 +901,4 @@ footer{margin-top:0;background:#070E22}
 .card .cover.photo.cert::after{display:none}
 .card .cover.photo.cert small{position:absolute;left:10px;bottom:10px;background:#1B3E98;color:#fff}
 .card:hover .cover.photo.cert::before{transform:scale(1.03)}
+.teacher ul a{color:var(--brand);font-weight:700;text-decoration:none}.teacher ul a:hover{text-decoration:underline}
