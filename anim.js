@@ -27,7 +27,7 @@
   });
 
   /* 2) Boʻlimlarning yumshoq paydo boʻlishi (faqat ekran pastidagilar) */
-  var SEL = '.nw, .ask, .doc, .steps li, .teachers>*, .gal>a, .faq details, .prog li, .reg-grid>*, .adv, .lic-strip, .sh, .partners-head, .cta-head, .quiz, .cards4>*, .newcourse';
+  var SEL = '.nw, .ask, .doc, .steps li, .gal>a, .faq details, .prog li, .reg-grid>*, .adv, .lic-strip, .sh, .partners-head, .cta-head, .quiz, .cards4>*, .newcourse';
   var vh = window.innerHeight;
   var rio = new IntersectionObserver(function (es) {
     var batch = es.filter(function (e) { return e.isIntersecting; });
