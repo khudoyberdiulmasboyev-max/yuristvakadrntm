@@ -97,7 +97,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @media (max-width:960px){.layout{grid-template-columns:1fr}}
 
 .feature{position:relative;display:block;border-radius:10px;overflow:hidden;color:#fff;text-decoration:none;min-height:420px;background:#0F2566;background-image:radial-gradient(90% 120% at 100% 0%,#2D5BD0 0%,transparent 60%),linear-gradient(160deg,#1B3E98 0%,#0F2566 70%)}
-.feature.photo{background:#0F2566 url(img/feature.jpg) center 35%/cover no-repeat}
+.feature.photo{background:#0F2566 url(feature.jpg) center 35%/cover no-repeat}
 .feature.photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,37,102,.55) 0%,rgba(15,37,102,.15) 35%,rgba(8,18,50,.85) 100%)}
 .feature .dates,.feature .txt{z-index:1}
 .feature .txt{background:none}
@@ -327,7 +327,7 @@ footer ul a:hover{opacity:1;text-decoration:underline}
 @keyframes mq{to{transform:translateX(calc(-50% - 5px))}}
 /* Bosh eʼlon rasmi sekin yaqinlashadi */
 .feature.photo{background:#0F2566}
-.feature .kb{position:absolute;inset:0;background:url(img/feature.jpg) center 35%/cover no-repeat;transform-origin:60% 40%;animation:kb 16s ease-out both}
+.feature .kb{position:absolute;inset:0;background:url(feature.jpg) center 35%/cover no-repeat;transform-origin:60% 40%;animation:kb 16s ease-out both}
 .feature.photo::before{z-index:1}
 .feature .dates,.feature .txt{z-index:2}
 @keyframes kb{from{transform:scale(1)}to{transform:scale(1.09)}}
@@ -895,3 +895,9 @@ footer{margin-top:0;background:#070E22}
 }
 @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
 .cb-alt a{white-space:nowrap}
+/* Sertifikat namunasi kartochkasi */
+.card .cover.photo.cert{background:linear-gradient(135deg,#E9F4F2,#DCEFF6);text-decoration:none;cursor:zoom-in}
+.card .cover.photo.cert::before{background:var(--img) center/contain no-repeat;inset:8px;filter:drop-shadow(0 6px 14px rgba(15,37,102,.25))}
+.card .cover.photo.cert::after{display:none}
+.card .cover.photo.cert small{position:absolute;left:10px;bottom:10px;background:#1B3E98;color:#fff}
+.card:hover .cover.photo.cert::before{transform:scale(1.03)}
