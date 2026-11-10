@@ -1,1 +1,70 @@
-{"guruhlar":[]}
+{
+ "guruhlar": [
+  {
+   "id": "2026-10-10-101",
+   "nomi": "101-guruh",
+   "format": "Shanba-yakshanba",
+   "boshlanish": "2026-10-10",
+   "tugash": "2026-11-08",
+   "soat": 40,
+   "tinglovchilar": [
+    {
+     "fio": "ARIPOVA DINORA SHOVKATULLAYEVNA",
+     "sertifikat": "05-4702"
+    },
+    {
+     "fio": "DJURAYEVA DILNOZA ABDIKAMOLOVNA",
+     "sertifikat": "05-4703"
+    },
+    {
+     "fio": "ESHMANOV AZAMAT TURABOVICH",
+     "sertifikat": "05-4704"
+    },
+    {
+     "fio": "FAYZULLAYEVA TAXMINA XAZRATKULOVNA",
+     "sertifikat": "05-4705"
+    },
+    {
+     "fio": "KOMILOVA MOXINA RUSTAMOVNA",
+     "sertifikat": "05-4706"
+    },
+    {
+     "fio": "MUXIRBOYEV ASADBEK BAXTIYOR O‘G‘LI",
+     "sertifikat": "05-4707"
+    },
+    {
+     "fio": "NORQOBILOV JAHONGIR SHABONOVICH",
+     "sertifikat": "05-4708"
+    },
+    {
+     "fio": "PRIMKULOVA XURSHIDA XAMIDULLAYEVNA",
+     "sertifikat": "05-4709"
+    },
+    {
+     "fio": "SAMADOVA SARVINOZ G‘AYRAT QIZI",
+     "sertifikat": "05-4710"
+    },
+    {
+     "fio": "SODIQOV HABIBULLA RUSTAMOVICH",
+     "sertifikat": "05-4711"
+    },
+    {
+     "fio": "TASHPULATOVA FARIDA SALIMOVNA",
+     "sertifikat": "05-4712"
+    },
+    {
+     "fio": "TUXTABEKOVA SHAXZODA YAKUB QIZI",
+     "sertifikat": "05-4713"
+    },
+    {
+     "fio": "XUSANOVA MUXLISAXON NODIRBEK QIZI",
+     "sertifikat": "05-4714"
+    },
+    {
+     "fio": "ZOKIROV JAHONGIR SHUXRAT O‘G‘LI",
+     "sertifikat": "05-4715"
+    }
+   ]
+  }
+ ]
+}
