@@ -3,3 +3,5 @@ Allow: /
 Disallow: /config.php
 Disallow: /ariza.php
 Sitemap: https://yuristkadr.uz/sitemap.xml
+Disallow: /guruhlar.html
+Disallow: /guruhlar.json

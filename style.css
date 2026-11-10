@@ -902,3 +902,54 @@ footer{margin-top:0;background:#070E22}
 .card .cover.photo.cert small{position:absolute;left:10px;bottom:10px;background:#1B3E98;color:#fff}
 .card:hover .cover.photo.cert::before{transform:scale(1.03)}
 .teacher ul a{color:var(--brand);font-weight:700;text-decoration:none}.teacher ul a:hover{text-decoration:underline}
+/* ===== Guruhlar va sertifikatni tekshirish ===== */
+.gr-main{padding-top:36px;padding-bottom:70px}
+.gr-hero{max-width:760px}
+.gr-hero h1{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;margin:6px 0 10px}
+.gr-hero p{color:var(--muted);font-size:1.02rem}
+.gr-search{display:flex;align-items:center;gap:10px;margin-top:22px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:4px 16px;max-width:560px}
+.gr-search:focus-within{border-color:var(--brand)}
+.gr-search svg{width:20px;height:20px;fill:var(--muted);flex:none}
+.gr-search input{flex:1;border:0;outline:0;background:transparent;font:600 1rem var(--f);padding:12px 0;color:var(--ink);min-width:0}
+.gr-search.sm{margin:16px 0 10px;max-width:none}
+.gr-verify,.gr-found{margin-top:28px;max-width:760px}
+.gr-ok,.gr-bad{display:flex;gap:16px;align-items:flex-start;border-radius:16px;padding:18px 20px;margin-bottom:16px}
+.gr-ok{background:#E8F6EE;border:1px solid #9BD5B4;color:#14532D}
+.gr-bad{display:block;background:#FDECEC;border:1px solid #F3B3B3;color:#7F1D1D}
+.gr-ok b,.gr-bad b{font-size:1.15rem}
+.gr-ok p,.gr-bad p{margin-top:4px;font-size:.92rem}
+.gr-bad a,.gr-none a{color:inherit;font-weight:800}
+.gr-tick{flex:none;width:40px;height:40px;border-radius:50%;background:#16A34A;color:#fff;display:grid;place-items:center;font-weight:900;font-size:1.3rem}
+.gr-tick.sm{width:28px;height:28px;font-size:.95rem}
+.gr-people{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+.gr-people li{display:flex;align-items:center;gap:12px;padding:11px 16px;border-top:1px solid var(--line)}
+.gr-people li:first-child{border-top:0}
+.gr-people li.hit{background:#FFF7E0}
+.gr-people .n{flex:none;width:28px;color:var(--muted);font-weight:700;font-size:.85rem;font-variant-numeric:tabular-nums}
+.gr-people .fio{flex:1;font-weight:700}
+.gr-people .gr-sn{flex:none;color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
+.gr-found-h{font-weight:800;margin-bottom:8px}
+.gr-hit{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-decoration:none;color:var(--ink);margin-bottom:8px}
+.gr-hit:hover{border-color:var(--brand)}
+.gr-hit small{display:block;color:var(--muted);font-size:.82rem;margin-top:2px}
+.gr-none{color:var(--muted)}
+.gr-list{margin-top:48px}
+.gr-list-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.gr-list-head h2{font-size:1.5rem;font-weight:900;text-transform:uppercase}
+.gr-all{font-weight:800;color:var(--brand);text-decoration:none}
+.gr-month h3{display:flex;align-items:center;gap:12px;margin:26px 0 14px;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);font-weight:800}
+.gr-month h3::after{content:"";flex:1;height:1px;background:var(--line)}
+.gr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gr-card{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:16px 18px;display:grid;gap:6px;align-content:start}
+.gr-card.open{margin-bottom:4px}
+.gr-card-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.gr-card-h b{font-size:1.1rem;font-weight:900}
+.gr-badge{font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;color:#fff;background:#1B3E98}
+.gr-badge.off{background:#0F766E}.gr-badge.wk{background:#B45309}
+.gr-dates{font-weight:700}
+.gr-topic,.gr-count{color:var(--muted);font-size:.88rem}
+.gr-open{margin-top:4px;font-weight:800;color:var(--brand);text-decoration:none;font-size:.9rem}
+.gr-empty{color:var(--muted);padding:24px 0}
+@media (max-width:900px){.gr-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.gr-grid{grid-template-columns:1fr}.gr-people .gr-sn{display:none}}
+.gr-hero.compact > p:not(.eyebrow){display:none}.gr-hero.compact h1{font-size:clamp(1.6rem,3vw,2.2rem)}.gr-hero.compact .gr-search{display:none}
