@@ -134,7 +134,7 @@
   function show(i) {
     idx = (i + items.length) % items.length;
     var a = items[idx], th = a.querySelector('img'), fc = a.querySelector('figcaption');
-    img.src = th.getAttribute('src').replace(/\.jpg$/, '_L.jpg');
+    img.src = a.getAttribute('data-full') || th.getAttribute('src').replace(/\.jpg$/, '_L.jpg');
     img.alt = th.alt;
     var lab = fc && fc.querySelector('span'), rest = fc ? [].filter.call(fc.childNodes, function (n) { return n !== lab; }).map(function (n) { return n.textContent; }).join('').trim() : '';
     cap.textContent = (lab ? lab.textContent.trim() + ' · ' : '') + rest;

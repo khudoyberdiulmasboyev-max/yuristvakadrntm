@@ -100,3 +100,27 @@
       });
   });
 })();
+
+/* «Markaz hayoti» galereyasi: kanallardagi dars, test, sertifikat va seminar rasmlari o'zi yangilanadi */
+(function () {
+  var gal = document.getElementById('gal');
+  if (!gal || !window.fetch) return;
+  var MAX = 8;
+  function esc(s) { return String(s || '').replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  var ctl = window.AbortController ? new AbortController() : null;
+  var t = setTimeout(function () { if (ctl) ctl.abort(); }, 8000);
+  fetch('api/photos', { signal: ctl ? ctl.signal : undefined }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+    clearTimeout(t);
+    var ph = (j && j.photos) || [];
+    if (ph.length < 3) return; // kam boʻlsa — saytdagi doimiy rasmlar qoladi
+    var fresh = ph.slice(0, MAX).map(function (p) {
+      return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener" data-cat="' + esc(p.cat) + '" data-full="' + esc(p.img) + '"><figure>' +
+        '<img src="' + esc(p.img) + '" alt="' + esc(p.caption || p.label) + '" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest(\'a\').remove()">' +
+        '<figcaption><span>' + esc(p.label) + '</span>' + esc(p.caption) + '</figcaption></figure></a>';
+    }).join('');
+    var old = [].slice.call(gal.querySelectorAll('a')).slice(0, Math.max(0, MAX - Math.min(ph.length, MAX)));
+    gal.innerHTML = fresh;
+    old.forEach(function (a) { gal.appendChild(a); });
+    if (window.ykArmReveal) window.ykArmReveal(gal);
+  }).catch(function () {});
+})();
