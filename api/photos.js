@@ -2,6 +2,8 @@
 // Faqat dars, test, sertifikat topshirish va seminarlar haqidagi postlarning rasmlari olinadi.
 // Natija Vercel CDN'da 30 daqiqa saqlanadi.
 
+import { readIndex } from './_gallery.js';
+
 const CHANNELS = ['kadr_yurist', 'yuristkadr'];
 const PAGES = 5;      // har bir kanaldan nechta sahifa (~20 post) koʻrib chiqiladi
 const LIMIT = 16;     // jami nechta rasm qaytariladi
@@ -64,9 +66,13 @@ async function channel(ch) {
 }
 
 export default async function handler(req, res) {
-  const lists = await Promise.all(CHANNELS.map((c) => channel(c).catch(() => [])));
+  const [group, ...lists] = await Promise.all([
+    // Yopiq guruhdan #sayt bilan yuborilgan rasmlar (Vercel Blob ulangan boʻlsa)
+    process.env.BLOB_READ_WRITE_TOKEN ? readIndex().then((x) => (x.photos || []).map((p) => ({ ...p, url: p.img }))).catch(() => []) : Promise.resolve([]),
+    ...CHANNELS.map((c) => channel(c).catch(() => [])),
+  ]);
   const seen = new Set();
-  const photos = lists.flat()
+  const photos = [...group, ...lists.flat()]
     .sort((a, b) => (a.date < b.date ? 1 : -1))
     .filter((p) => (seen.has(p.img) ? false : seen.add(p.img)))
     .slice(0, LIMIT);
