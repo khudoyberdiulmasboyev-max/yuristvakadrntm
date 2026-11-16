@@ -18,8 +18,9 @@ export default async function handler(req, res) {
   const reply = (code, ok, message = '') => res.status(code).json({ ok, message });
   if (req.method !== 'POST') return reply(405, false, 'Faqat POST');
 
-  const TOKEN = process.env.BOT_TOKEN || '';
-  const CHATS = (process.env.CHAT_IDS || '').split(',').map((s) => s.trim()).filter(Boolean);
+  // Alohida bot sozlanmagan boʻlsa — rasmlar boti va ichki guruh ishlatiladi
+  const TOKEN = process.env.BOT_TOKEN || process.env.GALLERY_BOT_TOKEN || '';
+  const CHATS = (process.env.CHAT_IDS || process.env.GROUP_CHAT_IDS || '').split(',').map((s) => s.trim()).filter(Boolean);
   if (!TOKEN || !CHATS.length) return reply(500, false, 'BOT_TOKEN yoki CHAT_IDS sozlanmagan');
 
   let data = req.body;
