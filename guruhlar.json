@@ -1,68 +1,100 @@
 {
  "guruhlar": [
   {
-   "id": "2026-10-10-101",
-   "nomi": "101-guruh",
-   "format": "Shanba-yakshanba",
-   "boshlanish": "2026-10-10",
-   "tugash": "2026-11-08",
-   "soat": 40,
+   "id": "2026-11-16-oflayn",
+   "nomi": "16.11.2026 guruhi",
+   "format": "Oflayn",
+   "boshlanish": "2026-11-16",
+   "tugash": "",
+   "soat": "",
    "tinglovchilar": [
     {
-     "fio": "ARIPOVA DINORA SHOVKATULLAYEVNA",
-     "sertifikat": "05-4702"
+     "fio": "ABDURAHIMOVA GO‘ZAL DILMUROD QIZI",
+     "sertifikat": "05-4716"
     },
     {
-     "fio": "DJURAYEVA DILNOZA ABDIKAMOLOVNA",
-     "sertifikat": "05-4703"
+     "fio": "ALIMOVA HURSHIDA ABDUVAITOVNA",
+     "sertifikat": "05-4717"
     },
     {
-     "fio": "ESHMANOV AZAMAT TURABOVICH",
-     "sertifikat": "05-4704"
+     "fio": "ALIMOVA SHAXNOZA ISMATULLAYEVNA",
+     "sertifikat": "05-4718"
     },
     {
-     "fio": "FAYZULLAYEVA TAXMINA XAZRATKULOVNA",
-     "sertifikat": "05-4705"
+     "fio": "BERDIKULOVA GULNARA MUMINOVNA",
+     "sertifikat": "05-4719"
     },
     {
-     "fio": "KOMILOVA MOXINA RUSTAMOVNA",
-     "sertifikat": "05-4706"
+     "fio": "DULTABAYEVA ZEBO BEGZOD QIZI",
+     "sertifikat": "05-4720"
     },
     {
-     "fio": "MUXIRBOYEV ASADBEK BAXTIYOR O‘G‘LI",
-     "sertifikat": "05-4707"
+     "fio": "ERMEKBAYEVA JANAR ABDUVAXOBOVNA",
+     "sertifikat": "05-4721"
     },
     {
-     "fio": "NORQOBILOV JAHONGIR SHABONOVICH",
-     "sertifikat": "05-4708"
+     "fio": "HUSAINOVA SEVARA QURBANBAYEVNA",
+     "sertifikat": "05-4722"
     },
     {
-     "fio": "PRIMKULOVA XURSHIDA XAMIDULLAYEVNA",
-     "sertifikat": "05-4709"
+     "fio": "JO‘RAYEVA SEVARA HAMZAYEVNA",
+     "sertifikat": "05-4723"
     },
     {
-     "fio": "SAMADOVA SARVINOZ G‘AYRAT QIZI",
-     "sertifikat": "05-4710"
+     "fio": "MIRZAYEVA ZAMIRA ZARIFOVNA",
+     "sertifikat": "05-4724"
     },
     {
-     "fio": "SODIQOV HABIBULLA RUSTAMOVICH",
-     "sertifikat": "05-4711"
+     "fio": "MUSURMONOV JASUR MENGMUHAMMAT O‘G‘LI",
+     "sertifikat": "05-4725"
     },
     {
-     "fio": "TASHPULATOVA FARIDA SALIMOVNA",
-     "sertifikat": "05-4712"
+     "fio": "MUXAMADIYEVA MAVJUDA SHODIYEVNA",
+     "sertifikat": "05-4726"
     },
     {
-     "fio": "TUXTABEKOVA SHAXZODA YAKUB QIZI",
-     "sertifikat": "05-4713"
+     "fio": "ODILOVA GULSANAM BOXODIR QIZI",
+     "sertifikat": "05-4727"
     },
     {
-     "fio": "XUSANOVA MUXLISAXON NODIRBEK QIZI",
-     "sertifikat": "05-4714"
+     "fio": "QODIROVA GAVXAR MUXAMMADJONOVNA",
+     "sertifikat": "05-4728"
     },
     {
-     "fio": "ZOKIROV JAHONGIR SHUXRAT O‘G‘LI",
-     "sertifikat": "05-4715"
+     "fio": "RO'ZMETOVA BARNO AZADOVNA",
+     "sertifikat": "05-4729"
+    },
+    {
+     "fio": "SAYDAXMEDOVA MA‘MURA MAXMUTOVNA",
+     "sertifikat": "05-4730"
+    },
+    {
+     "fio": "SHERALIYEVA NAVBAXOR TURSUNBAYEVNA",
+     "sertifikat": "05-4731"
+    },
+    {
+     "fio": "SHODIYEVA NARGIZA XAMIDULLAYEVNA",
+     "sertifikat": "05-4732"
+    },
+    {
+     "fio": "SULXONOV HUMOYUN BAXTIYOR O‘G‘LI",
+     "sertifikat": "05-4733"
+    },
+    {
+     "fio": "TOJIMETOV OTABEK XAMIDBOY O‘G‘LI",
+     "sertifikat": "05-4734"
+    },
+    {
+     "fio": "UMAROV SODIRJON TAXIROVICH",
+     "sertifikat": "05-4735"
+    },
+    {
+     "fio": "VAXOBOVA MALIKA BAXTIYOR QIZI",
+     "sertifikat": "05-4736"
+    },
+    {
+     "fio": "ZUHUROVA DILDORA MIRZAHITOVNA",
+     "sertifikat": "05-4737"
     }
    ]
   }
