@@ -1,10 +1,41 @@
 {
   "cleanUrls": false,
   "rewrites": [
-    { "source": "/feed.php", "destination": "/api/feed" },
-    { "source": "/ariza.php", "destination": "/api/ariza" }
+    {
+      "source": "/feed.php",
+      "destination": "/api/feed"
+    },
+    {
+      "source": "/ariza.php",
+      "destination": "/api/ariza"
+    },
+    {
+      "source": "/test",
+      "destination": "/test.html"
+    }
   ],
   "headers": [
-    { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }] }
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/test-sw.js",
+      "headers": [
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/test"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    }
   ]
 }
